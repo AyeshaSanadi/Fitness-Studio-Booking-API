@@ -27,7 +27,7 @@ This is a simple FastAPI project that allows clients to:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/AyeshaSanadi/-Fitness-Studio-Booking-API.git
+git clone https://github.com/AyeshaSanadi/Fitness-Studio-Booking-API.git
 cd fitness-booking-api
 ````
 
