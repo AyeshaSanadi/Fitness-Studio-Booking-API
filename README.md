@@ -22,33 +22,50 @@ This is a simple FastAPI project that allows clients to:
 * zoneinfo (standard in Python 3.9+)
 
 
-## Setup Instructions
+## Setup Instructions (Windows CMD)
 
 ### 1. Clone the Repository
 
-```bash
+> If you have **Git for Windows** installed (e.g., via Git Bash or Git CMD), you can use:
+
+```cmd
 git clone https://github.com/AyeshaSanadi/Fitness-Studio-Booking-API.git
-cd fitness-booking-api
-````
+cd Fitness-Studio-Booking-API
+```
 
-### 2. Create Virtual Environment
+> If you **don’t have Git**, download the project as a ZIP file from GitHub and extract it manually.
 
-```bash
+
+
+### 2. Create a Virtual Environment
+
+```cmd
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-### 3. Install Dependencies
+### 3. Activate the Virtual Environment
 
-```bash
-pip install fastapi uvicorn pydantic
+```cmd
+venv\Scripts\activate
 ```
 
-### 4. Run the API
 
-```bash
+### 4. Install Dependencies
+
+```cmd
+pip install fastapi uvicorn pydantic[email]
+```
+
+> If you're using `EmailStr` in your FastAPI models, make sure to install with `[email]` extras for email validation.
+
+
+
+### 5. Run the API Server
+
+```cmd
 uvicorn main:app --reload
 ```
+
 
 ## Notes
 
